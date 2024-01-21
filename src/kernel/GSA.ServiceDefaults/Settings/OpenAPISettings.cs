@@ -1,11 +1,13 @@
-﻿namespace GSA.ServiceDefaults.Settings;
+﻿using GSA.ServiceDefaults.Contracts;
 
-public sealed record OpenAPISettings
+namespace GSA.ServiceDefaults.Settings;
+
+public sealed record OpenAPISettings : BaseApplicationSetting
 {
-    public string EndpointName { get; init; }
-    public string Description { get; init; }
-    public string Title { get; init; }
-    public string Version { get; init; }
+    public string EndpointName { get; }
+    public string Description { get; }
+    public string Title { get; }
+    public string Version { get; }
 
     public OpenAPISettings()
     {
@@ -14,4 +16,6 @@ public sealed record OpenAPISettings
         Title = string.Empty;
         Version = string.Empty;
     }
+
+    public override bool IsValid() => !new[] { EndpointName, Description, Title, Version }.Any(string.IsNullOrWhiteSpace);    
 }
