@@ -1,6 +1,4 @@
-﻿using GSA.ServiceDefaults.Exceptions;
-
-namespace GSA.ServiceDefaults.Contracts;
+﻿namespace GSA.ServiceDefaults.Contracts;
 
 public interface IApplicationSetting
 {

@@ -1,13 +1,11 @@
-﻿using GSA.ServiceDefaults.Contracts;
-
-namespace GSA.ServiceDefaults.Settings;
+﻿namespace GSA.ServiceDefaults.Settings;
 
 public sealed record OpenAPISettings : BaseApplicationSetting
 {
-    public string EndpointName { get; }
-    public string Description { get; }
-    public string Title { get; }
-    public string Version { get; }
+    public string EndpointName { get; init; }
+    public string Description { get; init; }
+    public string Title { get; init; }
+    public string Version { get; init; }
 
     public OpenAPISettings()
     {
@@ -17,5 +15,5 @@ public sealed record OpenAPISettings : BaseApplicationSetting
         Version = string.Empty;
     }
 
-    public override bool IsValid() => !new[] { EndpointName, Description, Title, Version }.Any(string.IsNullOrWhiteSpace);    
+    public override bool IsValid() => !new[] { EndpointName, Description, Title, Version }.Any(string.IsNullOrWhiteSpace);
 }

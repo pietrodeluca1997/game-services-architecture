@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.ServiceDefaults", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pocs", "pocs", "{FF1E1459-F2EA-4C1F-8C00-7DB6AEFBAF91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAS.POC.WebAPI", "pocs\GAS.POC.WebAPI\GAS.POC.WebAPI.csproj", "{648AE043-4418-49B8-B7F7-AB4A8C4AB9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GAS.POC.WebAPI", "pocs\GAS.POC.WebAPI\GAS.POC.WebAPI.csproj", "{648AE043-4418-49B8-B7F7-AB4A8C4AB9A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

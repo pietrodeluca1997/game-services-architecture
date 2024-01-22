@@ -7,12 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace GSA.ServiceDefaults;
+namespace GSA.ServiceDefaults.Extensions;
 
 public static partial class ApplicationExtensions
 {
     public static IApplicationBuilder UseOpenAPIDocumentation(this WebApplication app)
-    {        
+    {
         IConfiguration appConfiguration = app.Configuration;
         OpenAPISettings openAPISettings = appConfiguration.GetSection(nameof(OpenAPISettings)).Get<OpenAPISettings>() ?? throw new MissingApplicationSettingException(nameof(OpenAPISettings));
 
@@ -20,7 +20,7 @@ public static partial class ApplicationExtensions
 
         app.UseSwagger();
         app.UseSwaggerUI(swaggerSetup =>
-        {           
+        {
             swaggerSetup.SwaggerEndpoint($"/swagger/{openAPISettings.Version}/swagger.json", openAPISettings.EndpointName);
         });
 
@@ -31,7 +31,7 @@ public static partial class ApplicationExtensions
     }
 
     public static IHostApplicationBuilder AddOpenAPIDocumentation(this IHostApplicationBuilder appBuilder)
-    {      
+    {
         IServiceCollection services = appBuilder.Services;
         IConfiguration appConfiguration = appBuilder.Configuration;
         OpenAPISettings openAPISettings = appConfiguration.GetSection(nameof(OpenAPISettings)).Get<OpenAPISettings>() ?? throw new MissingApplicationSettingException(nameof(OpenAPISettings));
