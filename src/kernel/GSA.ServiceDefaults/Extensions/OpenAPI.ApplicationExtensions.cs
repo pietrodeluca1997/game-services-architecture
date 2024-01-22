@@ -14,10 +14,8 @@ public static partial class ApplicationExtensions
     public static IApplicationBuilder UseOpenAPIDocumentation(this WebApplication app)
     {
         IConfiguration appConfiguration = app.Configuration;
-        OpenAPISettings openAPISettings = appConfiguration.GetSection(nameof(OpenAPISettings)).Get<OpenAPISettings>() ?? throw new MissingApplicationSettingException(nameof(OpenAPISettings));
-
-        openAPISettings.EnsureValidState();
-
+        OpenAPISettings openAPISettings = appConfiguration.TryConfigureApplicationSetting<OpenAPISettings>(nameof(OpenAPISettings)); 
+        
         app.UseSwagger();
         app.UseSwaggerUI(swaggerSetup =>
         {
@@ -34,9 +32,8 @@ public static partial class ApplicationExtensions
     {
         IServiceCollection services = appBuilder.Services;
         IConfiguration appConfiguration = appBuilder.Configuration;
-        OpenAPISettings openAPISettings = appConfiguration.GetSection(nameof(OpenAPISettings)).Get<OpenAPISettings>() ?? throw new MissingApplicationSettingException(nameof(OpenAPISettings));
+        OpenAPISettings openAPISettings = appConfiguration.TryConfigureApplicationSetting<OpenAPISettings>(nameof(OpenAPISettings));
 
-        openAPISettings.EnsureValidState();
 
         services.AddEndpointsApiExplorer();
 
