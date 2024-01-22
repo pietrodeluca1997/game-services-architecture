@@ -24,7 +24,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.POC.WebAPI", "pocs\GSA.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{44176466-A4DB-4302-8C40-295177C8D334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.SolutionHost.AppHost", "tools\GSA.SolutionHost\GSA.SolutionHost.AppHost\GSA.SolutionHost.AppHost.csproj", "{10C47C5B-826A-4B9A-88DE-F746B079A124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.SolutionHost.AppHost", "tools\GSA.SolutionHost\GSA.SolutionHost.AppHost\GSA.SolutionHost.AppHost.csproj", "{10C47C5B-826A-4B9A-88DE-F746B079A124}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

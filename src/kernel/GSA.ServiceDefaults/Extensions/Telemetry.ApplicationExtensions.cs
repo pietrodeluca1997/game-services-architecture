@@ -11,10 +11,10 @@ public static partial class ApplicationExtensions
 {
     public static IHostApplicationBuilder ConfigureOpenTelemetry(this IHostApplicationBuilder builder)
     {
-        builder.Logging.AddOpenTelemetry(o =>
+        builder.Logging.AddOpenTelemetry(options =>
         {
-            o.IncludeFormattedMessage = true;
-            o.IncludeScopes = true;
+            options.IncludeFormattedMessage = true;
+            options.IncludeScopes = true;
         });
 
         builder.Services.AddOpenTelemetry()
