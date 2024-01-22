@@ -24,6 +24,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.POC.WebAPI", "pocs\GSA.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{44176466-A4DB-4302-8C40-295177C8D334}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.SolutionHost.AppHost", "tools\GSA.SolutionHost\GSA.SolutionHost.AppHost\GSA.SolutionHost.AppHost.csproj", "{10C47C5B-826A-4B9A-88DE-F746B079A124}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{648AE043-4418-49B8-B7F7-AB4A8C4AB9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{648AE043-4418-49B8-B7F7-AB4A8C4AB9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{648AE043-4418-49B8-B7F7-AB4A8C4AB9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C47C5B-826A-4B9A-88DE-F746B079A124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C47C5B-826A-4B9A-88DE-F746B079A124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C47C5B-826A-4B9A-88DE-F746B079A124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C47C5B-826A-4B9A-88DE-F746B079A124}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{F445FFE4-3793-4223-B6DF-3A78087170DC} = {1E5F3345-050B-4AA4-9B46-BB48A7E6F3A5}
 		{648AE043-4418-49B8-B7F7-AB4A8C4AB9A0} = {FF1E1459-F2EA-4C1F-8C00-7DB6AEFBAF91}
 		{44176466-A4DB-4302-8C40-295177C8D334} = {E195BC06-5230-4554-B6EC-6CDD968C7A7E}
+		{10C47C5B-826A-4B9A-88DE-F746B079A124} = {44176466-A4DB-4302-8C40-295177C8D334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F039624-C153-41B3-9139-F01B59A018DC}

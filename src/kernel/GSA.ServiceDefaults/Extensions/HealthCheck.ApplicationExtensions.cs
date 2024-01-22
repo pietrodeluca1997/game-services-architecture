@@ -19,13 +19,13 @@ public static partial class ApplicationExtensions
         return appBuilder;
     }
 
-    public static WebApplication MapHealthCheckEndpoints(this WebApplication webApp)
+    public static WebApplication MapHealthCheckEndpoints(this WebApplication webApplication)
     {
-        webApp.MapHealthChecks(HEALTH_CHECK_ROUTE, new HealthCheckOptions
+        webApplication.MapHealthChecks(HEALTH_CHECK_ROUTE, new HealthCheckOptions
         {
             Predicate = healthCheck => healthCheck.Tags.All(tag => HEALTHY_STATE_TAGS.Contains(tag))
         });
 
-        return webApp;
+        return webApplication;
     }
 }

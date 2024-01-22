@@ -25,10 +25,10 @@ public static partial class ApplicationExtensions
         return appBuilder;
     }
 
-    public static WebApplication UseApplicationLogging(this WebApplication webApp)
+    public static WebApplication UseApplicationLogging(this WebApplication webApplication)
     {
-        webApp.UseHttpLogging();
+        webApplication.UseHttpLogging();
 
-        return webApp;
+        return webApplication;
     }
 }
