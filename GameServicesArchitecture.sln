@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.Game.BFF", "gateways\GS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.ApplicationDefaults", "source\kernel\GSA.ApplicationDefaults\GSA.ApplicationDefaults.csproj", "{22E43336-E51C-4BD0-B28A-0D5138D67419}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.GameProfile.WebAPI", "source\services\GSA.GameProfile.WebAPI\GSA.GameProfile.WebAPI.csproj", "{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{22E43336-E51C-4BD0-B28A-0D5138D67419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22E43336-E51C-4BD0-B28A-0D5138D67419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22E43336-E51C-4BD0-B28A-0D5138D67419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{2DA57E4F-A18A-41AD-8041-70E630308888} = {E195BC06-5230-4554-B6EC-6CDD968C7A7E}
 		{5C163B34-6E7A-42CF-A404-2C78D34E7EDF} = {2DA57E4F-A18A-41AD-8041-70E630308888}
 		{22E43336-E51C-4BD0-B28A-0D5138D67419} = {1E5F3345-050B-4AA4-9B46-BB48A7E6F3A5}
+		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B} = {2E85EF74-9F05-4D0E-9E08-AFF52DC3DD8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F039624-C153-41B3-9139-F01B59A018DC}
