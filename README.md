@@ -1,6 +1,6 @@
 # Game Services Architecture
 
-This repository houses a versatile game services architecture designed to cater to the needs of a variety of games, providing essential functionalities such as version information, news updates, and more. While initially developed for a survival game, this solution is adaptable to suit any game's requirements.
+This repository houses a versatile game services architecture designed to cater to the needs of a variety of games, providing essential functionalities such as version information, news updates, and more. This solution is adaptable to suit any game's requirements.
 
 ## Key Features
 
