@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\kernel\GSA.ServiceDefaults\GSA.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\source\kernel\GSA.ServiceDefaults\GSA.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

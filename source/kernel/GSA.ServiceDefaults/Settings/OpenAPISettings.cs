@@ -1,4 +1,6 @@
-﻿namespace GSA.ServiceDefaults.Settings;
+﻿using GSA.ApplicationDefaults.Settings;
+
+namespace GSA.ServiceDefaults.Settings;
 
 public sealed record OpenAPISettings : BaseApplicationSetting
 {

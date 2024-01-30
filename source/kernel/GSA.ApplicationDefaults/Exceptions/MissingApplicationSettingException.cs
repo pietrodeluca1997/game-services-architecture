@@ -1,4 +1,4 @@
-﻿namespace GSA.ServiceDefaults.Exceptions;
+﻿namespace GSA.ApplicationDefaults.Exceptions;
 
 public class MissingApplicationSettingException : Exception
 {

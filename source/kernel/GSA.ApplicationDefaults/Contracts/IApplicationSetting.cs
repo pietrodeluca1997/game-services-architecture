@@ -1,4 +1,4 @@
-﻿namespace GSA.ServiceDefaults.Contracts;
+﻿namespace GSA.ApplicationDefaults.Contracts;
 
 public interface IApplicationSetting
 {

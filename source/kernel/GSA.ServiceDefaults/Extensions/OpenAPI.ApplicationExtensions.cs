@@ -1,5 +1,4 @@
-﻿using GSA.ServiceDefaults.Exceptions;
-using GSA.ServiceDefaults.Settings;
+﻿using GSA.ServiceDefaults.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -14,8 +13,8 @@ public static partial class ApplicationExtensions
     public static IApplicationBuilder UseOpenAPIDocumentation(this WebApplication app)
     {
         IConfiguration appConfiguration = app.Configuration;
-        OpenAPISettings openAPISettings = appConfiguration.TryConfigureApplicationSetting<OpenAPISettings>(nameof(OpenAPISettings)); 
-        
+        OpenAPISettings openAPISettings = appConfiguration.TryConfigureApplicationSetting<OpenAPISettings>(nameof(OpenAPISettings));
+
         app.UseSwagger();
         app.UseSwaggerUI(swaggerSetup =>
         {

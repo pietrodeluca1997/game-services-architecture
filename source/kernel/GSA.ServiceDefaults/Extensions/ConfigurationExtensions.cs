@@ -1,5 +1,5 @@
-﻿using GSA.ServiceDefaults.Contracts;
-using GSA.ServiceDefaults.Exceptions;
+﻿using GSA.ApplicationDefaults.Contracts;
+using GSA.ApplicationDefaults.Exceptions;
 using Microsoft.Extensions.Configuration;
 
 namespace GSA.ServiceDefaults.Extensions;
@@ -8,7 +8,7 @@ public static partial class ConfigurationExtensions
 {
     public static TApplicationSetting TryConfigureApplicationSetting<TApplicationSetting>(this IConfiguration configuration, string keyName) where TApplicationSetting : IApplicationSetting
     {
-        TApplicationSetting applicationSetting = configuration.GetSection(keyName).Get<TApplicationSetting>() ?? throw new MissingApplicationSettingException(nameof(TApplicationSetting));
+        TApplicationSetting applicationSetting = configuration.GetSection(keyName).Get<TApplicationSetting>() ?? throw new MissingApplicationSettingException(typeof(TApplicationSetting).Name);
 
         applicationSetting.EnsureValidState();
 
