@@ -1,6 +1,4 @@
 ﻿using GSA.ApplicationDefaults.Helpers;
-using HttpMethod = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod;
-using GSA.ServiceDefaults.Models;
 
 namespace GSA.Game.BFF.Models.Queries;
 
