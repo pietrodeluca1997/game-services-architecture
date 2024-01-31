@@ -2,18 +2,18 @@ using GSA.ServiceDefaults.Extensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-builder.AddApplicationExtensions();
+builder.AddWebApplicationExtensions();
 
 builder.Services.AddControllers();
 
 WebApplication app = builder.Build();
 
-app.UseApplicationExtensions();
+app.UseWebApplicationExtensions();
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.UseDefaultRouting();
 
 app.Run();

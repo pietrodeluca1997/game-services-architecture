@@ -8,11 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\kernel\GSA.ApplicationDefaults\GSA.ApplicationDefaults.csproj" />
     <ProjectReference Include="..\..\kernel\GSA.ServiceDefaults\GSA.ServiceDefaults.csproj" />
   </ItemGroup>
 </Project>

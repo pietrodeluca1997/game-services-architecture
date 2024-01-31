@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace GSA.ServiceDefaults.Extensions;
 
-public static partial class ApplicationExtensions
+public static partial class WebApplicationExtensions
 {
     private static readonly string[] HEALTHY_STATE_TAGS = ["live"];
     private const string HEALTH_CHECK_ROUTE = "/app-health";

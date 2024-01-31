@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\gateways\GSA.Game.BFF\GSA.Game.BFF.csproj" />
     <ProjectReference Include="..\..\..\pocs\GSA.POC.WebAPI\GSA.POC.WebAPI.csproj" />
+    <ProjectReference Include="..\..\..\source\services\GSA.GameProfile.WebAPI\GSA.GameProfile.WebAPI.csproj" />
   </ItemGroup>
 
 </Project>

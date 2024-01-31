@@ -7,7 +7,7 @@ using OpenTelemetry.Trace;
 
 namespace GSA.ServiceDefaults.Extensions;
 
-public static partial class ApplicationExtensions
+public static partial class WebApplicationExtensions
 {
     public static IHostApplicationBuilder ConfigureOpenTelemetry(this IHostApplicationBuilder builder)
     {

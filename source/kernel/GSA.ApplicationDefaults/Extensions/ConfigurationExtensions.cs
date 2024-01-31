@@ -2,7 +2,7 @@
 using GSA.ApplicationDefaults.Exceptions;
 using Microsoft.Extensions.Configuration;
 
-namespace GSA.ServiceDefaults.Extensions;
+namespace GSA.ApplicationDefaults.Extensions;
 
 public static partial class ConfigurationExtensions
 {

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
     <ItemGroup>
-	    <ProjectReference Include="..\..\source\kernel\GSA.ApplicationDefaults\GSA.ApplicationDefaults.csproj" />
+	    <ProjectReference Include="..\..\source\kernel\GSA.ServiceCommunicationChannel\GSA.ServiceCommunicationChannel.csproj" />
 	    <ProjectReference Include="..\..\source\kernel\GSA.ServiceDefaults\GSA.ServiceDefaults.csproj" />
     </ItemGroup>
 

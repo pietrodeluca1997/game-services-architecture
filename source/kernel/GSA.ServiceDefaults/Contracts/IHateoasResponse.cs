@@ -7,5 +7,5 @@ public interface IHateoasResponse
 {
     List<HateoasLinkModel> Links { get; set; }
 
-    void AddLink(HttpMethod type, string rel, string href);
+    void AddLink(HttpMethod type, string rel, Uri href);
 }

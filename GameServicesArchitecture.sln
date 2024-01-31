@@ -33,9 +33,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{2D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.Game.BFF", "gateways\GSA.Game.BFF\GSA.Game.BFF.csproj", "{5C163B34-6E7A-42CF-A404-2C78D34E7EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.ApplicationDefaults", "source\kernel\GSA.ApplicationDefaults\GSA.ApplicationDefaults.csproj", "{22E43336-E51C-4BD0-B28A-0D5138D67419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.ApplicationDefaults", "source\kernel\GSA.ApplicationDefaults\GSA.ApplicationDefaults.csproj", "{22E43336-E51C-4BD0-B28A-0D5138D67419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.GameProfile.WebAPI", "source\services\GSA.GameProfile.WebAPI\GSA.GameProfile.WebAPI.csproj", "{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.GameProfile.WebAPI", "source\services\GSA.GameProfile.WebAPI\GSA.GameProfile.WebAPI.csproj", "{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GSA.Core", "source\kernel\GSA.Core\GSA.Core.csproj", "{1DD4A7D7-2F3F-418A-8515-2E1826C1EC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSA.ServiceCommunicationChannel", "source\kernel\GSA.ServiceCommunicationChannel\GSA.ServiceCommunicationChannel.csproj", "{56B3FB1D-A8F2-4AA3-A234-D8EC67C764C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,14 @@ Global
 		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD4A7D7-2F3F-418A-8515-2E1826C1EC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD4A7D7-2F3F-418A-8515-2E1826C1EC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD4A7D7-2F3F-418A-8515-2E1826C1EC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD4A7D7-2F3F-418A-8515-2E1826C1EC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B3FB1D-A8F2-4AA3-A234-D8EC67C764C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B3FB1D-A8F2-4AA3-A234-D8EC67C764C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B3FB1D-A8F2-4AA3-A234-D8EC67C764C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B3FB1D-A8F2-4AA3-A234-D8EC67C764C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +94,8 @@ Global
 		{5C163B34-6E7A-42CF-A404-2C78D34E7EDF} = {2DA57E4F-A18A-41AD-8041-70E630308888}
 		{22E43336-E51C-4BD0-B28A-0D5138D67419} = {1E5F3345-050B-4AA4-9B46-BB48A7E6F3A5}
 		{BA7B8E05-5E65-4D52-AA27-D4D24A84462B} = {2E85EF74-9F05-4D0E-9E08-AFF52DC3DD8A}
+		{1DD4A7D7-2F3F-418A-8515-2E1826C1EC47} = {1E5F3345-050B-4AA4-9B46-BB48A7E6F3A5}
+		{56B3FB1D-A8F2-4AA3-A234-D8EC67C764C0} = {1E5F3345-050B-4AA4-9B46-BB48A7E6F3A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F039624-C153-41B3-9139-F01B59A018DC}

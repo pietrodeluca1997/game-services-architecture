@@ -5,9 +5,9 @@ public record HateoasLinkModel
 {
     public string Type { get; init; }
     public string Rel { get; init; }
-    public string Href { get; init; }
+    public Uri Href { get; init; }
 
-    public HateoasLinkModel(HttpMethod type, string rel, string href)
+    public HateoasLinkModel(HttpMethod type, string rel, Uri href)
     {
         Type = type.ToString().ToUpper();
         Rel = rel;

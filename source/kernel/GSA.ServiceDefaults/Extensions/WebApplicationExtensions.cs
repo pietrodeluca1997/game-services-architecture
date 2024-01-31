@@ -4,9 +4,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace GSA.ServiceDefaults.Extensions;
 
-public static partial class ApplicationExtensions
+public static partial class WebApplicationExtensions
 {
-    public static IHostApplicationBuilder AddApplicationExtensions(this IHostApplicationBuilder builder)
+    public static IHostApplicationBuilder AddWebApplicationExtensions(this IHostApplicationBuilder builder)
     {
         builder.AddOpenAPIDocumentation();
 
@@ -30,7 +30,7 @@ public static partial class ApplicationExtensions
         return builder;
     }
 
-    public static WebApplication UseApplicationExtensions(this WebApplication webApplication)
+    public static WebApplication UseWebApplicationExtensions(this WebApplication webApplication)
     {
         webApplication.UseOpenAPIDocumentation();
 

@@ -1,17 +1,21 @@
 ﻿using GSA.Game.BFF.Models.Queries;
+using GSA.ServiceCommunicationChannel.Providers;
 using GSA.ServiceDefaults.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GSA.Game.BFF.Controllers;
 
 [Route("main-menu")]
-public class MainMenuController : RestAPIController
+public class MainMenuController(GameProfileServiceCommunicationProvider gameProfileProvider) : RestAPIController
 {
     [HttpGet]
-    public async Task<IActionResult> GetRequiredData()
+    public async Task<IActionResult> GetMainMenuData()
     {
-        await Task.CompletedTask;
+        MainMenuQueryResponse mainMenuData = new()
+        {
+            CharactersList = await gameProfileProvider.GetCharactersList()
+        };
 
-        return Ok(new MainMenuQueryResponse());
+        return Ok(mainMenuData);
     }
 }

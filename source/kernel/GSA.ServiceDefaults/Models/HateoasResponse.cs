@@ -12,7 +12,7 @@ public abstract record HateoasResponse : IHateoasResponse
         Links = [];
     }
 
-    public void AddLink(HttpMethod type, string rel, string href)
+    public void AddLink(HttpMethod type, string rel, Uri href)
     {
         Links.Add(new HateoasLinkModel(type, rel, href));
     }

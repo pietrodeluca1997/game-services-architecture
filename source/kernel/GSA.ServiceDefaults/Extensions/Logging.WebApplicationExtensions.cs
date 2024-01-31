@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace GSA.ServiceDefaults.Extensions;
 
-public static partial class ApplicationExtensions
+public static partial class WebApplicationExtensions
 {
     public static IHostApplicationBuilder AddApplicationLogging(this IHostApplicationBuilder appBuilder)
     {

@@ -1,4 +1,5 @@
-﻿using GSA.ServiceDefaults.Settings;
+﻿using GSA.ApplicationDefaults.Extensions;
+using GSA.ServiceDefaults.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +9,7 @@ using Microsoft.OpenApi.Models;
 
 namespace GSA.ServiceDefaults.Extensions;
 
-public static partial class ApplicationExtensions
+public static partial class WebApplicationExtensions
 {
     public static IApplicationBuilder UseOpenAPIDocumentation(this WebApplication app)
     {
